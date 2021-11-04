@@ -10,6 +10,7 @@ int main()
     cin >> x;
     cin >> count;
 
+    //xccsc;
     int factorial = 1;
     double powerx = x;
     double result = x;
