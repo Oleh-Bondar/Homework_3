@@ -7,29 +7,31 @@ int main()
     setlocale(0, "");
 
     double x, count;
+    cout << "Введите значение Х для функции sin(x): ";
     cin >> x;
+    cout << "Введите точность вычисления: ";
     cin >> count;
 
-    //xccsc;
     int factorial = 1;
+    int factorial_num = 2;
     double powerx = x;
     double result = x;
-    int j = 2;
     for (int i = 0; i < count; i++) {
             if (i % 2 == 0) {
                 powerx *= x * x;
-                factorial *= j * (j + 1);
+                factorial *= factorial_num * (factorial_num + 1);
                 result -= powerx / factorial;
             }
             else {
                 powerx *= x * x;
-                factorial *= j * (j + 1);
+                factorial *= factorial_num * (factorial_num + 1);
                 result += powerx / factorial;
             }
 
-            j += 2;
+            factorial_num += 2;
     }
    
+    cout << "Ваш результат: ";
     cout << result << endl;
 
     system("pause");
