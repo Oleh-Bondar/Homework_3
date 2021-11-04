@@ -17,14 +17,12 @@ int main()
     double powerx = x;
     double result = x;
     for (int i = 0; i < count; i++) {
+        powerx *= x * x;
+        factorial *= factorial_num * (factorial_num + 1);
             if (i % 2 == 0) {
-                powerx *= x * x;
-                factorial *= factorial_num * (factorial_num + 1);
                 result -= powerx / factorial;
             }
             else {
-                powerx *= x * x;
-                factorial *= factorial_num * (factorial_num + 1);
                 result += powerx / factorial;
             }
 
